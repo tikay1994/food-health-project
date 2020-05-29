@@ -1,0 +1,23 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 8rem;
+  border-top: 1px solid gray;
+}
+.contact-link {
+  margin-left: 1rem;
+  text-decoration: none;
+}
+@media (max-width: 1368px) {
+  .footer {
+    padding: 1rem 2rem;
+  }
+}
+@media (max-width: 760px) {
+  .footer {
+    justify-content: center;
+  }
+  .contact-link {
+    display: none;
+  }
+}

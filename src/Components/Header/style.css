@@ -1,0 +1,7 @@
+.icon-brand {
+    display: flex;
+}
+
+.icon-brand img {
+    margin-right: 5px;
+}

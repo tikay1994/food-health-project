@@ -1,0 +1,50 @@
+.btn-calories {
+  text-align: center;
+  margin: 2rem;
+}
+.btn-calories__link {
+  padding: 1rem;
+  font-size: 2rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  background-color: rgb(20, 179, 68);
+  border-radius: 10px;
+  color: white;
+}
+.btn-calories__link:hover {
+  opacity: 0.7;
+  transition: 0.35s ease-in-out;
+  color: black;
+}
+
+.main-content__layout {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  text-align: center;
+}
+.main-content__layout img {
+  width: 400px;
+  height: 250px;
+  border-radius: 10px;
+}
+.main-content__layout div {
+  margin: 1rem;
+}
+
+.chart-calories {
+  padding: 2rem;
+  text-align: center;
+}
+.advice {
+  border: 1px solid green;
+  padding: 2rem;
+  margin: 2rem 8rem;
+}
+.advice-title {
+  text-align: center;
+}
+
+@media (max-width: 760px) {
+  .main-content__layout {
+    display: block;
+  }
+}

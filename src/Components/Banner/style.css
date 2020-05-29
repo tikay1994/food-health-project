@@ -1,0 +1,17 @@
+.banner {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+
+    background-image: url(https://images.wallpaperscraft.com/image/breakfast_porridge_waffles_fruit_115145_3840x2160.jpg);
+    background-position: center;
+    background-size: cover;
+    opacity: 0.8;
+}
+
+.banner__title {
+    color: rgb(17, 139, 72);
+    font-weight: bold;
+}
