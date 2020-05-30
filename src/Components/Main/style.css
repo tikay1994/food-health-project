@@ -31,13 +31,14 @@
 }
 
 .chart-calories {
-  padding: 2rem;
+  margin: 2rem;
   text-align: center;
 }
 .advice {
   border: 1px solid green;
   padding: 2rem;
   margin: 2rem 8rem;
+  box-shadow: 5px 5px 5px #aaa;
 }
 .advice-title {
   text-align: center;

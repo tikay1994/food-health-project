@@ -1,0 +1,41 @@
+.login-account {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 3rem;
+    padding: 1rem;
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom right, rgb(27, 190, 122), rgb(217, 243, 104));
+}
+
+.btn-login {
+    margin: 1rem 0;
+    padding: 0 1rem;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+}
+.btn-login:hover {
+    transition: 0.35s ease-in-out;
+    background-color: #0044ff;
+}
+
+.login-footer {
+    display: flex;
+    justify-content: space-between;
+}
+.login-register {
+    font-size: large;
+    margin-right: 1rem;
+}
+.login-register:hover {
+    text-decoration: none;
+}
+.login-forgot {
+    color: gray;
+    font-size: large;
+}
+.login-forgot:hover {
+    text-decoration: none;
+}

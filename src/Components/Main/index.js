@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.css";
 import { Line } from "react-chartjs-2";
+import { Link } from "react-router-dom";
 function Main(props) {
   const chartData = {
     labels: ["Mon", "Tue", "Wed", "Thur", "Fri", "Sat", "Sun"],
@@ -16,7 +17,9 @@ function Main(props) {
   return (
     <div>
       <div className="btn-calories">
-        <button className="btn-calories__link">Your calories today!</button>
+        <Link to="/cal">
+          <button className="btn-calories__link">Your calories today!</button>
+        </Link>
       </div>
       <div className="main-content__layout">
         <div>

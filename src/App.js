@@ -5,15 +5,22 @@ import Header from "./Components/Header";
 import Main from "./Components/Main";
 import Footer from "./Components/Footer";
 import Banner from "./Components/Banner";
+import Calculation from "./Components/Calculation";
+import Login from "./Components/Login";
 
 function App() {
   return (
     <div className="App">
       <Router>
+        <div className="App-background"></div>
         <Header />
         <Switch>
-          <Route path="/about">{/* <About /> */}</Route>
-          <Route path="/users">{/* <Users /> */}</Route>
+          <Route path="/cal">
+            <Calculation />
+          </Route>
+          <Route path="/login">
+            <Login />
+          </Route>
           <Route path="/">
             <Banner />
             <Main />
