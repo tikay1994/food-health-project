@@ -15,6 +15,7 @@ import {
   DropdownItem,
   Button,
 } from "reactstrap";
+import { Link } from "react-router-dom";
 
 function Header(props) {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,7 +23,7 @@ function Header(props) {
   const toggle = () => setIsOpen(!isOpen);
   return (
     <div>
-      <Navbar color="light" light expand="md">
+      <Navbar light expand="md">
         <NavbarBrand href="/">
           <div className="icon-brand">
             <img width="36px" height="36px" src={logo} alt="logo" />
@@ -50,9 +51,9 @@ function Header(props) {
               </DropdownMenu>
             </UncontrolledDropdown>
           </Nav>
-          <NavLink href="/login">
+          <Link to="/login">
             <Button color="primary">Login</Button>
-          </NavLink>
+          </Link>
         </Collapse>
       </Navbar>
     </div>
