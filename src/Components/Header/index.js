@@ -22,7 +22,7 @@ function Header(props) {
 
   const toggle = () => setIsOpen(!isOpen);
   return (
-    <div>
+    <div className="navbar-header">
       <Navbar light expand="md">
         <NavbarBrand href="/">
           <div className="icon-brand">
