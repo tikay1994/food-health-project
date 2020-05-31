@@ -122,10 +122,20 @@ function Main(props) {
           <li>Don't eat after 8:00pm</li>
         </ul>
       </div>
+      <div className="group-video">
+        <embed
+          className="main-video"
+          src="https://www.youtube.com/embed/28CIFOhkKrU"
+        />
+        <embed
+          className="main-video"
+          src="https://www.youtube.com/embed/580e5vP-oO0"
+        />
+      </div>
       <div className="btn-contact">
         {buttonContact.map((button, index) => (
           <a href="#">
-            <svg class="icon-contact" viewBox="0 0 32 32">
+            <svg className="icon-contact" viewBox="0 0 32 32">
               <path fill={button.fill} d={button.path}></path>
             </svg>
           </a>
