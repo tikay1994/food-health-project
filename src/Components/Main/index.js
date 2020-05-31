@@ -51,15 +51,17 @@ function Main(props) {
       </div>
       <div className="chart-calories">
         <h3>YOUR CALORIES IN THIS WEEK</h3>
-        <Line
-          data={chartData}
-          options={{
-            legend: {
-              display: true,
-              position: "bottom",
-            },
-          }}
-        />
+        <div className="chart-detail">
+          <Line
+            data={chartData}
+            options={{
+              legend: {
+                display: true,
+                position: "bottom",
+              },
+            }}
+          />
+        </div>
       </div>
       <div className="advice">
         <div className="advice-title">

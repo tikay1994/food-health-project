@@ -34,6 +34,9 @@
   margin: 2rem;
   text-align: center;
 }
+.chart-detail {
+  padding: 3rem 10rem;
+}
 .advice {
   border: 1px solid green;
   padding: 2rem;
@@ -44,8 +47,17 @@
   text-align: center;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 640px) {
   .main-content__layout {
     display: block;
+  }
+}
+
+@media (max-width: 1024px) {
+  .chart-detail {
+    padding: 2rem 0;
+  }
+  .advice {
+    margin: 2rem;
   }
 }

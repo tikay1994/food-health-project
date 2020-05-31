@@ -2,6 +2,7 @@
   border: 1px solid gray;
   box-shadow: 5px 5px 5px green;
   margin: 2rem;
+  text-align: center;
 }
 .input-cal {
   margin: 1rem;
