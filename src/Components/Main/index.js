@@ -44,31 +44,57 @@ function Main(props) {
         </Link>
       </div>
       <div className="main-content__layout">
-        <div>
-          <h2>Food of you today</h2>
-          <h3>Breakfast</h3>
-          <p></p>
-          <h3>Lunch</h3>
-          <p></p>
-          <h3>Dinner</h3>
-          <p></p>
+        <div className="main-content__text">
+          <h2>Breakfast</h2>
+          <h5>
+            This is a list of notable breakfast foods, consisting of foods that
+            are commonly consumed at breakfast. Breakfast is the first meal
+            taken after rising from a night's sleep, most often eaten in the
+            early morning before undertaking the day's work. Among English
+            speakers, "breakfast" can be used to refer to this meal or to refer
+            to a meal composed of traditional breakfast foods (such as eggs,
+            oatmeal, and sausage) served at any time of day. Breakfast foods are
+            prepared with a multitude of ingredients, including oats, wheat,
+            maize, barley, noodles, starches, eggs, meats, and other foods.
+          </h5>
+          <a href="#">See more ...</a>
         </div>
         <div>
           <img src="https://images.wallpaperscraft.com/image/hamburger_vegetables_fast_foods_113645_3840x2160.jpg"></img>
         </div>
       </div>
-      <div className="main-content__layout">
+      <div className="main-content__layout main-content__layout_swap">
         <div>
-          <img src="https://images.wallpaperscraft.com/image/meat_vegetables_dishes_82035_1920x1080.jpg"></img>
+          <img src="https://simply-delicious-food.com/wp-content/uploads/2019/04/greek-chicken-salad-4.jpg"></img>
+        </div>
+        <div className="main-content__text main-content__text_swap">
+          <h2>Lunch</h2>
+          <h5>
+            An ideal lunch looks like a grilled chicken salad with an oil-based
+            dressing (500 calories), or a Mexican salad bowl with beans, salsa,
+            corn and avocado (600 to 700 calories). If you’re going for a
+            sandwich, skip the foot-long with mixed cold cuts, mayonnaise and
+            avocado (1,500 calories) and go for a six-inch sandwich with turkey
+            breast and mustard (200 to 300 calories).
+          </h5>
+          <a href="#">See more ...</a>
+        </div>
+      </div>
+      <div className="main-content__layout">
+        <div className="main-content__text">
+          <h2>Dinner</h2>
+          <h5>
+            Making a list of your family's favorite dinners is a helpful tip to
+            make meal planning easy! Check out my list of over 100 dinner ideas
+            below to get you started. Meal planning can be a little overwhelming
+            for everyone – for me too! It is not my favorite thing to do, but I
+            have found a few things that make it a tad bit easier to answer that
+            nagging question “What's for dinner!?!”
+          </h5>
+          <a href="#">See more ...</a>
         </div>
         <div>
-          <h2>Food of you today</h2>
-          <h3>Breakfast</h3>
-          <p></p>
-          <h3>Lunch</h3>
-          <p></p>
-          <h3>Dinner</h3>
-          <p></p>
+          <img src="https://images.pexels.com/photos/941869/pexels-photo-941869.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"></img>
         </div>
       </div>
       <div className="chart-calories">

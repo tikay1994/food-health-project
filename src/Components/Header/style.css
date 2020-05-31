@@ -5,3 +5,8 @@
 .icon-brand img {
   margin-right: 5px;
 }
+
+.brand-name {
+  color: rgb(34, 184, 34);
+  text-shadow: 2px 2px 2px grey;
+}

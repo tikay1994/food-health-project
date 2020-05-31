@@ -5,17 +5,12 @@
   margin: 2rem;
 }
 .login-header {
-  background-image: linear-gradient(
-    to bottom right,
-    rgb(27, 190, 122),
-    rgb(217, 243, 104)
-  );
   width: auto;
   margin-left: auto;
   margin-right: auto;
   padding: 2rem;
   border-radius: 10px;
-  box-shadow: 5px 5px 5px gray;
+  box-shadow: 5px 5px 5px #007bff;
 }
 .login-title {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",

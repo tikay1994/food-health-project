@@ -27,7 +27,7 @@ function Header(props) {
         <NavbarBrand href="/">
           <div className="icon-brand">
             <img width="36px" height="36px" src={logo} alt="logo" />
-            <h2>Food and Health</h2>
+            <h2 className="brand-name">Food and Health</h2>
           </div>
         </NavbarBrand>
         <NavbarToggler onClick={toggle} />
