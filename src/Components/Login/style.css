@@ -18,6 +18,15 @@
   color: #007bff;
   border-bottom: 1px solid black;
 }
+.group-input-user {
+  display: flex;
+  background-color: white;
+  align-items: center;
+  padding: 5px;
+}
+.input-user {
+  border: none;
+}
 .btn-login {
   margin: 1rem 0;
   padding: 0 1rem;

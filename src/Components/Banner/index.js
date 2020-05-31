@@ -4,7 +4,8 @@ function Banner(props) {
   return (
     <div>
       <section className="banner">
-        <h2 className="banner__title">FOOD IS IMPORTANT FOR LIFE</h2>
+        <div className="black-background"></div>
+        <h2 className="banner__title">FOOD VERY IS IMPORTANT TO LIFE</h2>
       </section>
     </div>
   );
