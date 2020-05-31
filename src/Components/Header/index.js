@@ -22,7 +22,7 @@ function Header(props) {
 
   const toggle = () => setIsOpen(!isOpen);
   return (
-    <div className="navbar-header">
+    <div className="navbar-header ">
       <Navbar light expand="md">
         <NavbarBrand href="/">
           <div className="icon-brand">
@@ -52,7 +52,7 @@ function Header(props) {
             </UncontrolledDropdown>
           </Nav>
           <Link to="/login">
-            <Button color="primary">Login</Button>
+            <Button color="success">Login</Button>
           </Link>
         </Collapse>
       </Navbar>

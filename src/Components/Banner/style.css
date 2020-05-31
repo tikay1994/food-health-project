@@ -1,9 +1,9 @@
 .banner {
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 30rem;
+  height: 100vh;
 
   background-image: url(https://images.wallpaperscraft.com/image/breakfast_porridge_waffles_fruit_115145_3840x2160.jpg);
   background-position: center;
@@ -21,12 +21,28 @@
 .black-background {
   background-color: black;
   width: 100%;
-  height: 30rem;
+  height: 100vh;
   position: absolute;
-  opacity: 0.6;
+  opacity: 0.4;
   z-index: -1;
 }
 
+.btn-calories {
+  margin-top: 5rem;
+}
+.btn-calories__link {
+  padding: 1rem;
+  font-size: 2rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  background-color: rgb(20, 179, 68);
+  border-radius: 10px;
+  color: white;
+}
+.btn-calories__link:hover {
+  opacity: 0.7;
+  transition: 0.35s ease-in-out;
+  color: black;
+}
 @media (max-width: 1024px) {
   .banner__title {
     font-size: 3rem;
@@ -42,5 +58,21 @@
 @media (max-width: 740px) {
   .banner__title {
     font-size: 1.8rem;
+  }
+}
+
+.component-transition {
+  animation-name: component-transition;
+  animation-duration: 1s;
+}
+
+@keyframes component-transition {
+  0% {
+    transform: translate(0px, 100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0px, 0px);
+    opacity: 1;
   }
 }

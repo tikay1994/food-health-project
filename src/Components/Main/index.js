@@ -1,7 +1,6 @@
 import React from "react";
 import "./style.css";
 import { Line } from "react-chartjs-2";
-import { Link } from "react-router-dom";
 function Main(props) {
   const buttonContact = [
     {
@@ -38,11 +37,6 @@ function Main(props) {
   };
   return (
     <div>
-      <div className="btn-calories">
-        <Link to="/cal">
-          <button className="btn-calories__link">Your calories today!</button>
-        </Link>
-      </div>
       <div className="main-content__layout">
         <div className="main-content__text">
           <h2>Breakfast</h2>
