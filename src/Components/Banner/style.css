@@ -8,7 +8,7 @@
   background-image: url(https://images.wallpaperscraft.com/image/breakfast_porridge_waffles_fruit_115145_3840x2160.jpg);
   background-position: center;
   background-size: cover;
-  opacity: 0.8;
+  opacity: 0.9999;
 }
 
 .banner__title {
@@ -23,7 +23,7 @@
   width: 100%;
   height: 100vh;
   position: absolute;
-  opacity: 0.4;
+  opacity: 0.5;
   z-index: -1;
 }
 
@@ -63,7 +63,7 @@
 
 .component-transition {
   animation-name: component-transition;
-  animation-duration: 1s;
+  animation-duration: 1.5s;
 }
 
 @keyframes component-transition {
