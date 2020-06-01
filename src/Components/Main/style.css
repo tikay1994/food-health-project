@@ -14,6 +14,7 @@
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   text-align: center;
+  animation-duration: 2s;
 }
 .main-content__layout div img {
   width: 100%;
@@ -26,15 +27,7 @@
 .main-content__text {
   text-align: left;
 }
-.chart-calories {
-  margin: 2rem 0;
-  padding: 2rem 0;
-  text-align: center;
-  background-color: white;
-}
-.chart-detail {
-  padding: 3rem 10rem;
-}
+
 .advice {
   display: flex;
   justify-content: center;
@@ -70,12 +63,6 @@
   height: 415px;
 }
 @media (max-width: 1024px) {
-  .chart-detail {
-    padding: 2rem 0;
-  }
-  .advice {
-    margin: 2rem;
-  }
   .btn-contact {
     flex-direction: row;
     position: static;
@@ -102,5 +89,20 @@
   .main-video {
     width: 420px;
     height: 315px;
+  }
+  .advice_content {
+    width: 20rem;
+  }
+}
+
+@keyframes animation-content {
+  0% {
+    transform: translate(0px, 200px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+    opacity: 1;
   }
 }

@@ -11,12 +11,12 @@
   cursor: pointer;
   padding: 8px;
   border-radius: 5px;
-}
-.scrollTop:hover {
-  background-color: rgba(71, 71, 71);
   animation-name: btn-scrollTop;
   animation-duration: 0.5s;
   animation-iteration-count: infinite;
+}
+.scrollTop:hover {
+  background-color: rgba(71, 71, 71);
 }
 
 @keyframes btn-scrollTop {

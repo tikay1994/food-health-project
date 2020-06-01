@@ -1,0 +1,28 @@
+.chart-calories {
+  margin: 2rem 0;
+  padding: 2rem 0;
+  text-align: center;
+  background-color: white;
+  animation-duration: 1.5s;
+}
+.chart-detail {
+  padding: 3rem 10rem;
+}
+
+@media (max-width: 1024px) {
+  .chart-detail {
+    padding: 2rem 0;
+  }
+}
+
+@keyframes animation-chart {
+  0% {
+    transform: rotate3d(1, 1, 1, 90deg);
+    opacity: 0;
+  }
+
+  100% {
+    transform: rotate3d(1, 1, 1, 0deg);
+    opacity: 1;
+  }
+}

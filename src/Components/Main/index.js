@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style.css";
-import { Line } from "react-chartjs-2";
+import ChartCalories from "../Chart";
 function Main(props) {
   const buttonContact = [
     {
@@ -24,20 +24,26 @@ function Main(props) {
         "M32 6v20c0 1.133-0.867 2-2 2h-2v-18.151l-12 8.617-12-8.617v18.151h-2c-1.135 0-2-0.867-2-2v-20c0-0.567 0.216-1.067 0.575-1.424 0.359-0.363 0.86-0.576 1.425-0.576h0.667l13.333 9.667 13.333-9.667h0.667c0.567 0 1.067 0.216 1.425 0.576 0.36 0.357 0.575 0.857 0.575 1.424z",
     },
   ];
-  const chartData = {
-    labels: ["Mon", "Tue", "Wed", "Thur", "Fri", "Sat", "Sun"],
-    datasets: [
-      {
-        label: "Calories",
-        data: [2512, 1966, 2341, 2189, 2263, 2225, 2344],
-        borderColor: "rgba(66, 210, 157, 0.85)",
-        backgroundColor: "rgba(66, 210, 157, 0.5)",
-      },
-    ],
+
+  const [showContent, setShowContent] = useState(false);
+  var mainContent = document.getElementById("main-content");
+
+  const checkShow = () => {
+    if (!showContent && window.pageYOffset > mainContent) {
+      setShowContent(true);
+    } else if (showContent && window.pageYOffset <= mainContent) {
+      setShowContent(false);
+    }
   };
+
+  window.addEventListener("scroll", checkShow);
+
   return (
-    <div>
-      <div className="main-content__layout">
+    <div id="main-content">
+      <div
+        className="main-content__layout"
+        style={{ animationName: showContent ? "animation-content" : "none" }}
+      >
         <div className="main-content__text">
           <h2>Breakfast</h2>
           <h5>
@@ -57,7 +63,10 @@ function Main(props) {
           <img src="https://images.wallpaperscraft.com/image/hamburger_vegetables_fast_foods_113645_3840x2160.jpg"></img>
         </div>
       </div>
-      <div className="main-content__layout main-content__layout_swap">
+      <div
+        className="main-content__layout main-content__layout_swap"
+        style={{ animationName: showContent ? "animation-content" : "none" }}
+      >
         <div>
           <img src="https://simply-delicious-food.com/wp-content/uploads/2019/04/greek-chicken-salad-4.jpg"></img>
         </div>
@@ -74,7 +83,10 @@ function Main(props) {
           <a href="#">See more ...</a>
         </div>
       </div>
-      <div className="main-content__layout">
+      <div
+        className="main-content__layout"
+        style={{ animationName: showContent ? "animation-content" : "none" }}
+      >
         <div className="main-content__text">
           <h2>Dinner</h2>
           <h5>
@@ -91,19 +103,8 @@ function Main(props) {
           <img src="https://images.pexels.com/photos/941869/pexels-photo-941869.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"></img>
         </div>
       </div>
-      <div className="chart-calories">
-        <h3>YOUR CALORIES IN THIS WEEK</h3>
-        <div className="chart-detail">
-          <Line
-            data={chartData}
-            options={{
-              legend: {
-                display: true,
-                position: "bottom",
-              },
-            }}
-          />
-        </div>
+      <div>
+        <ChartCalories />
       </div>
       <div className="advice">
         <div className="advice_content">
@@ -119,6 +120,7 @@ function Main(props) {
           </ul>
         </div>
       </div>
+
       <div className="group-video">
         <embed
           className="main-video"
