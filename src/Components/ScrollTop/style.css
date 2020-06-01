@@ -1,0 +1,34 @@
+.scrollTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: rgba(71, 71, 71, 0.575);
+  color: white;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 5px;
+}
+.scrollTop:hover {
+  background-color: rgba(71, 71, 71);
+  animation-name: btn-scrollTop;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes btn-scrollTop {
+  0% {
+    transform: translate(0px, 0px);
+  }
+
+  50% {
+    transform: translate(0px, 2px);
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+  }
+}

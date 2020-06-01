@@ -36,10 +36,25 @@
   padding: 3rem 10rem;
 }
 .advice {
-  border: 1px solid green;
-  padding: 2rem;
-  margin: 2rem 8rem;
-  box-shadow: 5px 5px 5px #aaa;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.advice_content {
+  width: 50rem;
+  overflow: auto;
+  height: 10em;
+  border: 1px solid gray;
+}
+
+.advice_content::-webkit-scrollbar {
+  width: 5px;
+  height: 3px;
+  background-color: #aaa;
+}
+
+.advice_content::-webkit-scrollbar-thumb {
+  background: #000;
 }
 .advice-title {
   text-align: center;

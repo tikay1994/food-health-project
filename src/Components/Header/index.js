@@ -19,10 +19,27 @@ import { Link } from "react-router-dom";
 
 function Header(props) {
   const [isOpen, setIsOpen] = useState(false);
-
   const toggle = () => setIsOpen(!isOpen);
+
+  const [colorMenu, setColorMenu] = useState(false);
+  const checkScroll = () => {
+    if (!colorMenu && window.pageYOffset > 0) {
+      setColorMenu(true);
+    } else if (colorMenu && window.pageYOffset === 0) {
+      setColorMenu(false);
+    }
+  };
+  window.addEventListener("scroll", checkScroll);
+
   return (
-    <div className="navbar-header ">
+    <div
+      className="navbar-header"
+      style={{
+        backgroundColor: colorMenu
+          ? "rgba(255, 255, 255)"
+          : "rgba(255, 255, 255, 0)",
+      }}
+    >
       <Navbar light expand="md">
         <NavbarBrand href="/">
           <div className="icon-brand">

@@ -106,15 +106,18 @@ function Main(props) {
         </div>
       </div>
       <div className="advice">
-        <div className="advice-title">
-          <h1>Advice</h1>
+        <div className="advice_content">
+          <div className="advice-title">
+            <h1>Advice</h1>
+          </div>
+          <ul>
+            <h3>Eat less sugar</h3>
+            <h3>Do exercise</h3>
+            <h3>Sleep early</h3>
+            <h3>Don't eat after 8:00pm</h3>
+            <h3>2 litter water per day</h3>
+          </ul>
         </div>
-        <ul>
-          <li>Eat less sugar</li>
-          <li>Do exercise</li>
-          <li>Sleep early</li>
-          <li>Don't eat after 8:00pm</li>
-        </ul>
       </div>
       <div className="group-video">
         <embed

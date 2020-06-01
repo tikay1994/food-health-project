@@ -7,6 +7,7 @@ import Footer from "./Components/Footer";
 import Banner from "./Components/Banner";
 import Calculation from "./Components/Calculation";
 import Login from "./Components/Login";
+import ScrollArrow from "./Components/ScrollTop";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
             <Main />
           </Route>
         </Switch>
+        <ScrollArrow />
         <Footer />
       </Router>
     </div>
