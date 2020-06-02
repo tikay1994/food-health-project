@@ -1,0 +1,196 @@
+.user-container {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    margin-top: 4.5rem;
+}
+.user-main-content {
+    text-align: center;
+    align-items: center;
+}
+.user-btn-calories {
+    animation-name: btn-calories;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    margin: 1rem;
+}
+.user-btn-calories__link {
+    padding: 1rem;
+    font-size: 2rem;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    background-color: rgb(20, 179, 68);
+    border-radius: 10px;
+    color: white;
+}
+.user-btn-calories__link:hover {
+    opacity: 0.7;
+    transition: 0.35s ease-in-out;
+    color: black;
+}
+
+.user-menu-icon svg {
+    margin: 5px;
+}
+.user-menu {
+    position: fixed;
+    width: 20vw;
+    overflow: auto;
+    height: 90vh;
+}
+.user-menu::-webkit-scrollbar {
+    width: 5px;
+    height: 3px;
+    background-color: #aaa;
+}
+
+.user-menu::-webkit-scrollbar-thumb {
+    background: #000;
+}
+.title-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 1rem;
+}
+.total-chart {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.component-chart-item {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.chart-item-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+.main-chart {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    padding: 1rem 0;
+}
+.main-chart-calories {
+    border-radius: 5px;
+    background-color: white;
+    padding: 1rem;
+    margin: 2rem;
+    height: auto;
+}
+.main-chart-item {
+    border-radius: 5px;
+    background-color: white;
+    padding: 1rem;
+    margin: 1rem;
+    height: auto;
+}
+.main-chart-item-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-chart-item-left div {
+    margin-top: 2rem;
+}
+.main-chart-right-value {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: center;
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.2);
+    border-radius: 5px;
+    margin: 1rem 0;
+}
+.user-activitives {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    height: auto;
+    margin: 2rem 1rem;
+}
+.user-foods {
+    background-color: #fff;
+    margin: 1rem;
+}
+.user-share {
+    background-color: white;
+    margin: 1rem;
+}
+.user-foods {
+    border-radius: 5px;
+    background-color: white;
+    padding: 1rem;
+}
+table {
+    width: 100%;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    text-align: center;
+}
+.user-food-detail {
+    height: auto;
+}
+.user-share-activitives {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+.user-share-state {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 1368px) {
+    .title-content {
+        padding: 2rem 2rem;
+    }
+    .total-chart {
+        display: grid;
+        padding: 0 1rem;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .main-chart {
+        padding: 0 1rem;
+    }
+    .component-chart-item {
+        grid-template-columns: 30% 70%;
+    }
+}
+
+@media (max-width: 640px) {
+    .title-content-link {
+        display: none;
+    }
+    .main-chart-right-value {
+        display: block;
+    }
+}
+
+@media (max-width: 990px) {
+    .total-chart,
+    .main-chart {
+        display: block;
+    }
+    .user-container,
+    .user-activitives {
+        grid-template-columns: auto;
+    }
+    .user-menu {
+        display: none;
+    }
+}

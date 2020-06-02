@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.css";
 import logo from "../../Assets/Images/logo.svg";
+import { Link } from "react-router-dom";
 function Login(props) {
   return (
     <div className="login-account">
@@ -51,7 +52,9 @@ function Login(props) {
                 />
               </div>
             </div>
-            <button className="btn-login">Login</button>
+            <Link to="/user">
+              <button className="btn-login">Login</button>
+            </Link>
           </form>
         </div>
         <div className="login-footer">

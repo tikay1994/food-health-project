@@ -2,6 +2,8 @@
   display: flex;
   justify-content: center;
   margin: 2rem;
+  animation-name: calculation-transition;
+  animation-duration: 1s;
 }
 
 .calculate-component {
@@ -16,4 +18,15 @@
 }
 .input-cal {
   margin: 1rem;
+}
+
+@keyframes calculation-transition {
+  0% {
+    transform: translate(100px, 0px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
 }

@@ -8,6 +8,7 @@ import Banner from "./Components/Banner";
 import Calculation from "./Components/Calculation";
 import Login from "./Components/Login";
 import ScrollArrow from "./Components/ScrollTop";
+import User from "./Components/User";
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
           </Route>
           <Route path="/login">
             <Login />
+          </Route>
+          <Route path="/user">
+            <User />
           </Route>
           <Route path="/">
             <Banner />

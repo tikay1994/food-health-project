@@ -3,6 +3,8 @@
   text-align: center;
   justify-content: center;
   margin: 4rem;
+  animation-name: login-transition;
+  animation-duration: 1s;
 }
 .login-header {
   width: auto;
@@ -13,8 +15,7 @@
   box-shadow: 5px 5px 5px #007bff;
 }
 .login-title {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: #007bff;
   border-bottom: 1px solid black;
 }
@@ -57,4 +58,15 @@
 }
 .login-forgot:hover {
   text-decoration: none;
+}
+
+@keyframes login-transition {
+  0% {
+    transform: translate(100px, 0px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
 }
