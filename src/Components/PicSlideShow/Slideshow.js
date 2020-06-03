@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./viewproject.css";
+import "./style.css";
 
 export default class Slideshow extends React.Component {
   constructor(props) {
@@ -86,43 +86,49 @@ export default class Slideshow extends React.Component {
 
   render() {
     return (
-      <div className="project-slideshow">
-        <div className="lp-slideshow">
-          <div className="container-slide">
-            {this.props.input.map((image, index) => {
-              return (
-                <div
-                  key={index}
-                  className={`slide ${
-                    this.state.slideIndex === index ? "active" : ""
-                  }`}
-                >
-                  <img className="image" src={image.src} alt={image.caption} />
-                  <div className="caption-text">{image.caption}</div>
-                </div>
-              );
-            })}
+      <div className="layout-slideshow">
+        <div className="project-slideshow">
+          <div className="lp-slideshow">
+            <div className="container-slide">
+              {this.props.input.map((image, index) => {
+                return (
+                  <div
+                    key={index}
+                    className={`slide ${
+                      this.state.slideIndex === index ? "active" : ""
+                    }`}
+                  >
+                    <img
+                      className="image"
+                      src={image.src}
+                      alt={image.caption}
+                    />
+                    <div className="caption-text">{image.caption}</div>
+                  </div>
+                );
+              })}
 
-            <span className="prev" onClick={this.backward}>
-              ❮
-            </span>
-            <span className="next" onClick={this.forward}>
-              ❯
-            </span>
-          </div>
+              <span className="prev" onClick={this.backward}>
+                ❮
+              </span>
+              <span className="next" onClick={this.forward}>
+                ❯
+              </span>
+            </div>
 
-          <div className="dot-container">
-            {this.props.input.map((_, index) => {
-              return (
-                <span
-                  key={index}
-                  className={`dot ${
-                    this.state.slideIndex === index ? "active" : ""
-                  }`}
-                  onClick={() => this.setSlideIndex(index)}
-                ></span>
-              );
-            })}
+            <div className="dot-container">
+              {this.props.input.map((_, index) => {
+                return (
+                  <span
+                    key={index}
+                    className={`dot ${
+                      this.state.slideIndex === index ? "active" : ""
+                    }`}
+                    onClick={() => this.setSlideIndex(index)}
+                  ></span>
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>

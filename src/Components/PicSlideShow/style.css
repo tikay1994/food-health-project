@@ -1,6 +1,11 @@
+.layout-slideshow {
+  background-image: url(../../Assets/Images/backgroundSlide.png);
+  background-size: 100% 100%;
+}
+
 .project-slideshow {
   margin: 2rem 20rem;
-  padding: 0 2rem;
+  padding: 6rem 2rem;
 }
 
 .lp-slideshow,

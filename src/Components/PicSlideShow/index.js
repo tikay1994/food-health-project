@@ -1,5 +1,5 @@
 import React from "react";
-import "./viewproject.css";
+import "./style.css";
 import hinh1 from "./img/food1.jpg";
 import hinh2 from "./img/food2.jpg";
 import hinh3 from "./img/food3.jpg";
@@ -7,7 +7,7 @@ import hinh4 from "./img/food4.jpg";
 import hinh5 from "./img/food5.jpg";
 import hinh6 from "./img/food6.jpg";
 import hinh7 from "./img/food7.jpg";
-import Slide from "./viewproject";
+import Slide from "./Slideshow";
 function View(props) {
   const collection = [
     { src: hinh1 },
