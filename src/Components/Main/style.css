@@ -38,6 +38,7 @@
   overflow: auto;
   height: 10em;
   border: 1px solid gray;
+  margin: 1rem 0;
 }
 
 .advice_content::-webkit-scrollbar {

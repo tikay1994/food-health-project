@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./style.css";
 import ChartCalories from "../Chart";
+import View from "../PicSlideShow";
 function Main(props) {
   const buttonContact = [
     {
@@ -119,6 +120,9 @@ function Main(props) {
             <h3>2 litter water per day</h3>
           </ul>
         </div>
+      </div>
+      <div>
+        <View />
       </div>
       <div className="group-video">
         <embed
