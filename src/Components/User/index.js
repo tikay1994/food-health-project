@@ -3,6 +3,7 @@ import { Line, Bar, Doughnut } from "react-chartjs-2";
 import "./style.css";
 import { Link } from "react-router-dom";
 import { Button } from "reactstrap";
+import TodoApp from "../Todoapp";
 function User(props) {
   const chartData1 = {
     labels: ["", "", "", "", "", "", "", "", "", "", ""],
@@ -471,6 +472,10 @@ function User(props) {
               <Button color="primary">Cool</Button>
             </div>
           </div>
+        </div>
+        <div>
+          <h2>What are you doing today?</h2>
+          <TodoApp />
         </div>
       </div>
     </div>

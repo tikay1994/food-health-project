@@ -1,0 +1,16 @@
+.TodoApp {
+  border: 1px solid black;
+  width: auto;
+  margin: 2rem;
+  margin-top: 1rem;
+}
+
+.Header-TodoApp {
+  margin: 10px;
+  display: flex;
+}
+
+.Header-TodoApp input {
+  margin-left: 10px;
+  width: 100%;
+}

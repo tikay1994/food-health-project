@@ -120,7 +120,6 @@ function Main(props) {
           </ul>
         </div>
       </div>
-
       <div className="group-video">
         <embed
           className="main-video"
