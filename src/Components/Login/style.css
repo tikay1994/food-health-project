@@ -19,6 +19,9 @@
   color: #007bff;
   border-bottom: 1px solid black;
 }
+.login-password__label {
+  padding-top: 0.5rem;
+}
 .group-input-user {
   display: flex;
   background-color: white;

@@ -15,6 +15,7 @@
   grid-template-columns: repeat(2, minmax(0, 1fr));
   text-align: center;
   animation-duration: 2s;
+  margin: 0 7rem;
 }
 .main-content__layout div img {
   width: 100%;
@@ -36,7 +37,7 @@
 .advice_content {
   width: 50rem;
   overflow: auto;
-  height: 10em;
+  height: 20em;
   border: 1px solid gray;
   margin: 1rem 0;
 }
@@ -72,6 +73,7 @@
   .main-content__layout {
     display: grid;
     grid-template-columns: auto;
+    margin: 0;
   }
   .main-content__text_swap {
     grid-row-start: 1;

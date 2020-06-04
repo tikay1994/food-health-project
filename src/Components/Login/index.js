@@ -10,8 +10,8 @@ function Login(props) {
         <h1 className="login-title">LOGIN</h1>
         <div className="">
           <form method="POST" className="">
-            <div className="">
-              <label for="email" className="">
+            <div className="login-username">
+              <label for="email" className="login-username__label">
                 Username Or Email
               </label>
               <div className="group-input-user">
@@ -31,8 +31,8 @@ function Login(props) {
                 />
               </div>
             </div>
-            <div className="">
-              <label for="password" className="">
+            <div className="login-password">
+              <label for="password" className="login-password__label">
                 Password
               </label>
               <div className="group-input-user">
