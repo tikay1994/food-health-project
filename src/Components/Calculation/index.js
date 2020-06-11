@@ -4,7 +4,7 @@ import "./style.css";
 import { Button, FormGroup } from "reactstrap";
 import { Formik, Form, FastField } from "formik";
 import InputField from "./inputField";
-
+import * as Yup from "yup";
 Calculation.propTypes = {
   onSubmit: PropTypes.func,
 };
@@ -15,9 +15,22 @@ Calculation.defaultProps = {
 function Calculation(props) {
   const initialValues = {
     title: "",
+    unit: "",
+    count: null,
   };
+
+  const validationSchema = Yup.object().shape({
+    title: Yup.string().required("This field is required"),
+    unit: Yup.string().required("This field is required"),
+    count: Yup.number().required("This field is required").nullable(),
+  });
+
   return (
-    <Formik initialValues={initialValues}>
+    <Formik
+      initialValues={initialValues}
+      validationSchema={validationSchema}
+      onSubmit={(values) => console.log("Submit: ", values)}
+    >
       {(formikProps) => {
         const { values, errors, touched } = formikProps;
         console.log({ values, errors, touched });
