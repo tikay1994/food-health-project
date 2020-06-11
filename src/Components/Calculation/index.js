@@ -5,6 +5,9 @@ import { Button, FormGroup } from "reactstrap";
 import { Formik, Form, FastField } from "formik";
 import InputField from "./inputField";
 import * as Yup from "yup";
+import { useDispatch } from "react-redux";
+import { useHistory } from "react-router-dom";
+import { addCal } from "../User/CalorySlice";
 Calculation.propTypes = {
   onSubmit: PropTypes.func,
 };
@@ -25,11 +28,28 @@ function Calculation(props) {
     count: Yup.number().required("This field is required").nullable(),
   });
 
+  const dispatch = useDispatch();
+  const history = useHistory();
+
+  const handleSubmit = (values) => {
+    return new Promise((resolve) => {
+      console.log("Form submit: ", values);
+
+      setTimeout(() => {
+        const action = addCal(values);
+        console.log({ action });
+        dispatch(action);
+
+        history.push("/user");
+        resolve(true);
+      }, 2000);
+    });
+  };
   return (
     <Formik
       initialValues={initialValues}
       validationSchema={validationSchema}
-      onSubmit={(values) => console.log("Submit: ", values)}
+      onSubmit={handleSubmit}
     >
       {(formikProps) => {
         const { values, errors, touched } = formikProps;
@@ -56,30 +76,9 @@ function Calculation(props) {
                   label="Count"
                   placeholder="1, 2, 3, ..."
                 />
-                {/* <div className="calculate-contain">
-              <div className="calculate-component">
-                <div className="input-cal">
-                  <p>Which food did you eat?</p>
-                  <input placeholder="Enter your food"></input>
-                </div>
-                <div className="input-cal">
-                  <p>Unit</p>
-                  <input placeholder="g, kg, piece, pound, ..."></input>
-                </div>
-                <div className="input-cal">
-                  <p>Count</p>
-                  <input placeholder="1, 2, 3, ..."></input>
-                </div>
-                <Button className="input-cal" color="success">
+                <Button type="submit" color="success">
                   Result
                 </Button>
-              </div>
-            </div> */}
-                <FormGroup>
-                  <Button type="submit" color="success">
-                    Result
-                  </Button>
-                </FormGroup>
               </Form>
             </div>
           </div>
