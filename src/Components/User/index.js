@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { Button } from "reactstrap";
 import TodoApp from "../Todoapp";
 import Calculation from "../Calculation";
+import { useSelector } from "react-redux";
 function User(props) {
   const chartData1 = {
     labels: ["", "", "", "", "", "", "", "", "", "", ""],
@@ -163,7 +164,7 @@ function User(props) {
       listChildren: [],
     },
   ];
-
+  const calories = useSelector((state) => state.calories);
   return (
     <div className="user-container">
       <div className="user-menu relative bg-white">
@@ -210,6 +211,20 @@ function User(props) {
               <button className="user-btn-calories__link">Calculation</button>
             </Link>
           </div>
+        </div>
+        <div>
+          <table>
+            <tr>
+              <th>Food</th>
+              <th>Unit</th>
+              <th>Count</th>
+            </tr>
+            <tr>
+              <td>{calories.title}</td>
+              <td>{calories.unit}</td>
+              <td>{calories.count}</td>
+            </tr>
+          </table>
         </div>
         <div className="total-chart">
           <div className="component-chart-item">
