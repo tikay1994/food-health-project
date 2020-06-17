@@ -9,6 +9,7 @@ import Calculation from "./Components/Calculation";
 import Login from "./Components/Login";
 import ScrollArrow from "./Components/ScrollTop";
 import User from "./Components/User";
+import OrderFood from "./Components/Orderfood";
 
 function App() {
   return (
@@ -26,6 +27,9 @@ function App() {
           <Route path="/user">
             <User />
           </Route>
+          <Router path="/order">
+            <OrderFood />
+          </Router>
           <Route path="/">
             <Banner />
             <Main />
