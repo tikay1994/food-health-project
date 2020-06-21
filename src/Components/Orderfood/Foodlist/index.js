@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "./style.css";
+import "./style.scss";
+import { Button } from "reactstrap";
 FoodList.propTypes = {
   foods: PropTypes.array,
 };
@@ -14,11 +15,28 @@ function FoodList(props) {
   return (
     <div className="food-list">
       {foods.map((food) => (
-        <div key={food.id}>
-          {food.title}
-          <a href={food.imageUrl}>
-            <img className="food-product" src={food.imageUrl} alt="food" />
-          </a>
+        <div className="food-product" key={food.id}>
+          <div className="food">
+            <img src={food.imageUrl} alt={food.title} />
+
+            <div className="food__overlay">
+              <h3 className="food__title">{food.title}</h3>
+
+              <div className="food__actions">
+                <div>
+                  <Button outline size="sm" color="danger">
+                    Order
+                  </Button>
+                </div>
+
+                <div>
+                  <Button outline size="sm" color="light">
+                    Information
+                  </Button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       ))}
     </div>
